@@ -1,3 +1,5 @@
+![Test Status](https://github.com/amonjerro/hex-grid-maker/actions/workflows/tests.yml/badge.svg)
+
 # Hex Gridder
 ---
 
