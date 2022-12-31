@@ -54,7 +54,7 @@ class GridPainter:
     
     def append_map_dimensions(self, drawContext):
         drawContext.text((10,10), 
-            f'Width: {self.max_x}, Height: {self.max_y}',
+            f'Hexes Across: {self.max_x}, Hexes Tall: {self.max_y}',
             fill=(0,0,0),
             font=ImageFont.truetype('arial.ttf', 15)
             )
@@ -64,12 +64,12 @@ class GridPainter:
             font=ImageFont.truetype('arial.ttf', 15)
             )
 
-        drawContext.text((200,10), 
+        drawContext.text((450,10), 
             f'Resolution: {"x".join(map(lambda x: str(x), self.resolution))}',
             fill=(0,0,0),
             font=ImageFont.truetype('arial.ttf', 15)
             )
-        drawContext.text((200,30), 
+        drawContext.text((450,30), 
             f'Margin Size: {"x".join(map(lambda x: str(x), self.margin))}',
             fill=(0,0,0),
             font=ImageFont.truetype('arial.ttf', 15)
