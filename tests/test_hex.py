@@ -8,6 +8,11 @@ class TestHex():
     flatHex = None
     pointyHex = None
 
+    def test_degree_to_radians(self):
+        from src.Hex import degrees_to_radians
+        assert degrees_to_radians(60) == 1.0471975511965976
+        assert degrees_to_radians(180) == math.pi
+
     def test_create_hexes(self):
         # Test Instantiation of the objects to see all is working as intended
         self.flatHex = Hex(HEX_RADIUS)

@@ -19,7 +19,6 @@ class GridPainter:
         self.max_y = 0
         self._determine_dimensions()
 
-
     def _determine_dimensions(self):
         total_drawable_width = self.resolution[0] - (2*self.margin[0])
         total_drawable_height = self.resolution[1] - (2*self.margin[1])
@@ -51,7 +50,7 @@ class GridPainter:
                     self.draw_hex(drawContext, 
                     self.hex.get_horizontal_distance()*x+self.margin[0],
                     0.5*self.hex.get_height()+self.hex.get_vertical_distance()*y+self.margin[1])
-    
+
     def append_map_dimensions(self, drawContext):
         drawContext.text((10,10), 
             f'Hexes Across: {self.max_x}, Hexes Tall: {self.max_y}',
@@ -74,8 +73,6 @@ class GridPainter:
             fill=(0,0,0),
             font=ImageFont.truetype('arial.ttf', 15)
             )
-
-        
 
     def start_drawing(self):
         im = Image.new('RGBA', self.resolution, (256,256,256, CONFIG.get('alpha_value',0)))

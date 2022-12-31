@@ -1,7 +1,8 @@
 import math
-from decimal import Decimal, ROUND_UP
-from src.utils import degrees_to_radians
+from decimal import Decimal
 
+def degrees_to_radians(x):
+    return x*(math.pi/180)
 
 class Hex:
     def __init__(self, outer_radius, pointy=False):
