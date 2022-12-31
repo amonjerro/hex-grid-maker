@@ -1,3 +1,6 @@
 venv/**
 **/__pycache__/**
 *.png
+
+.coverage
+.pytest_cache/**

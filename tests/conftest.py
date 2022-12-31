@@ -1,0 +1,2 @@
+
+HEX_RADIUS = 5
