@@ -42,4 +42,5 @@ class TestPaint():
             assert im.format == 'PNG'
             assert im.size == (1920,1080)
         
+        os.remove(f'{output_path}/{image_file.name}')
     

@@ -58,6 +58,23 @@ class GridPainter:
             fill=(0,0,0),
             font=ImageFont.truetype('arial.ttf', 15)
             )
+        drawContext.text((10,30), 
+            f'Hex Size: {self.hex._outer_radius}',
+            fill=(0,0,0),
+            font=ImageFont.truetype('arial.ttf', 15)
+            )
+
+        drawContext.text((200,10), 
+            f'Resolution: {"x".join(map(lambda x: str(x), self.resolution))}',
+            fill=(0,0,0),
+            font=ImageFont.truetype('arial.ttf', 15)
+            )
+        drawContext.text((200,30), 
+            f'Margin Size: {"x".join(map(lambda x: str(x), self.margin))}',
+            fill=(0,0,0),
+            font=ImageFont.truetype('arial.ttf', 15)
+            )
+
         
 
     def start_drawing(self):
